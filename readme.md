@@ -1,5 +1,5 @@
 
-```Overview```
+`Overview`
 This project uses Playwright for end-to-end testing, specifically to validate trip charge amounts based on parsed JSON data. 
 The tests verify if the charge amounts match expected values for each passenger based on their Primary Account Number (PAN).
 
@@ -14,8 +14,8 @@ Playwright
 
 Clone this repository:
 
-git clone <repository-url>
-cd <project-directory>
+git clone https://github.com/tvijayram/LP_Trip_Processor.git
+cd LP_Trip_Processor
 
 `Install dependencies:`
 
@@ -39,6 +39,7 @@ npx playwright test tests/trips/cal.trips.from.taps.spec.ts
 Example Output
 
 ✓ Validate charge for PAN: 5500005555555559 (500ms)
+
 ✓ Validate charge for PAN: 5500006666666666 (480ms)
 
 Trip for PAN: 5500005555555559
@@ -54,7 +55,7 @@ Actual Charge: $5.50
 Run tests with verbose logs:
 npx playwright test --debug
 
-Folder Structure
+`Folder Structure`
 
 /project-root
 │── tests/
@@ -63,9 +64,8 @@ Folder Structure
 │── playwright.config.ts  # Playwright configuration
 │── README.md  # This file
 
-
-Additional Configuration
+`Additional Configuration`
 Modify playwright.config.ts to change settings such as timeouts, browsers, or reports.
 
-License
+`License`
 This project is licensed under the MIT License.
