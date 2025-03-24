@@ -5,9 +5,15 @@ The tests verify if the charge amounts match expected values for each passenger 
 
 `Prerequisites`
 
+The Littlepay Trip Processor Java application should be running on your local machine or 
+if it is running on any server, pls update the BASE_URL in .env.sandox or .env.dev files. 
+ 
+For ex, BASE_URL=http://localhost:8082/
+
 Before running the tests, ensure you have the following installed:
 
 Node.js (v16 or later)
+
 Playwright
 
 `Installation`
@@ -15,6 +21,7 @@ Playwright
 Clone this repository:
 
 git clone https://github.com/tvijayram/LP_Trip_Processor.git
+
 cd LP_Trip_Processor
 
 `Install dependencies:`
@@ -30,6 +37,7 @@ Each test case validates the charge for a specific PAN.
 `Running Tests`
 
 To execute the Playwright tests, use:
+
 npm run test:sandbox [Assuming the tests are being run in sandbox env]
 
 `To run a specific test file:`
@@ -53,6 +61,7 @@ Actual Charge: $5.50
 `Debugging Tests`
 
 Run tests with verbose logs:
+
 npx playwright test --debug
 
 `Folder Structure`
@@ -65,6 +74,7 @@ npx playwright test --debug
 │── README.md  # This file
 
 `Additional Configuration`
+
 Modify playwright.config.ts to change settings such as timeouts, browsers, or reports.
 
 `License`
